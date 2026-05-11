@@ -1,0 +1,16 @@
+# Core ML
+numpy>=1.24
+matplotlib>=3.7
+
+# RL environment
+gymnasium>=1.0.0
+# For gymnasium's LunarLander-v3 you may also need:
+# pip install gymnasium[box2d]   ← will be handled by the script
+
+# Video processing / display
+opencv-python>=4.8
+mediapy>=0.2.0
+ipython>=8.0
+
+# Note: PyTorch with CUDA support is installed separately by the setup script.
+# torch (CUDA)   – not listed here because the script selects the correct index.
