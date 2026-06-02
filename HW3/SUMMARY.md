@@ -26,10 +26,3 @@ Careful tracing — not just "it runs" — found two pitfalls in the continuous 
 | **TD3 (full)** | **−1.72** | **~1.1 cm (best)** |
 
 Ablations (train return, last 20): full **−2.82**; no-smoothing **−3.45**; no-delay −2.89; no-double-Q −2.86.
-
-**HW4**: Dyna-Q learns the **optimal −13** CliffWalking path; MuZero+MCTS climbs **~20 → ~172 / 200** on CartPole within 100 episodes.
-
-## What it means
-- **Replay buffer + target networks are decisive** (DPG → DDPG jump of ~+21 return); **full TD3 is best and most stable**.
-- On this *easy, densely-rewarded* task, **target smoothing mattered most** of the three TD3 pieces (overestimation is mild, so clipped double-Q helps least here — it dominates on harder tasks).
-- **Planning pays off**: Dyna-Q reaches optimal with far fewer real steps, and MCTS turns weak learned models into a strong policy — the core lesson of model-based RL.
