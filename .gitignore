@@ -3,3 +3,9 @@ ex/
 initial test/
 */error.txt
 */__pycache__/
+
+# Markdown: ignore all markdown across the workspace, except the per-homework
+# README / SUMMARY documentation (kept at any depth).
+*.md
+!README.md
+!**/README.md
