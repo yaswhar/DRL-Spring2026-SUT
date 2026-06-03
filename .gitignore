@@ -9,3 +9,4 @@ initial test/
 *.md
 !README.md
 !**/README.md
+*/outputs/
